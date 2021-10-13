@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ficha del Estudiante</title>
+        <meta name="Navegador" content="Certamen 2">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    </head>
+
+    <body>
+        <h1>Ficha del Estudiante</h1>
+        <div class="container-fluid">
+            <span id="nombreAlumno">Patricio Ibarra</span>
+            <form class="row g-3 needs-validation" novalidate>
+                <!-- RUT -->
+                <div class="col-md-4">
+                    <label for="Rut" class="form-label">RUT</label>
+                   <input type="text" class="form-control" id="Rut" placeholder="12345678 9" pattern="[a-zA-Z0-9]+" required>
+                     <div class="valid-feedback">
+                        Rut ingresado correctamente.
+                     </div>
+                   <div class="invalid-feedback">
+                          Ingrese su RUT.
+                   </div>
+                  </div>
+                  
+                <!-- Numero de Telefono -->
+                <div class="col-4">
+                    <label for="numTelefono" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" name="telefono" id="numTelefono" placeholder="12345678"  required>
+                    <div class="valid-feedback">
+                      Numero ingresado correctamente.
+                   </div>
+                   <div class="invalid-feedback">
+                       Ingrese su numero de telefono.
+                   </div>
+                  </div>
+
+                <!-- Correo Electronico -->
+                <div class="col-md-8">
+                    <label for="mail" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" name="correo" id="mail" placeholder="ejemplo@mail.com" required>   
+                    <div class="valid-feedback">
+                       Correo ingresado correctamente.
+                    </div>
+                    <div class="invalid-feedback">
+                        Formato del correo no valido.
+                    </div>
+                   </div>
+
+                <!-- Region -->
+                <div class="col-md-4">
+                    <label for="region" class="form-label">Región</label>
+                    <select id="region" class="form-select" required>
+                        <option selected></option>
+                        <option value="1">Valparaíso</option>
+                        <option value="2">Coquimbo</option>
+                      </select>
+                </div>
+
+                <!-- Comuna -->
+                <div class="col-md-4">
+                    <label for="comuna" class="form-label">Comuna</label>
+                    <select id="comuna" class="form-select" required>
+                        <option selected></option>
+                        <option value="1">Valparaíso</option>
+                        <option value="2">Coquimbo</option>
+                      </select>
+                </div>
+
+                <!-- Direccion-->
+                <div class="col-md-8">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección " required>
+                    <div class="valid-feedback">
+                         Direccción ingresada correctamente.
+                    </div>
+                    <div class="invalid-feedback">
+                     Ingrese su dirección
+                    </div>
+                   </div>
+
+
+            </form>
+
+        </div>
+
+
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
